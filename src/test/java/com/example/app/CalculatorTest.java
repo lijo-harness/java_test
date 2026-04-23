@@ -26,4 +26,8 @@ class CalculatorTest {
     void testDivideByZero() {
         assertThrows(ArithmeticException.class, () -> calc.divide(10, 0));
     }
+    @Test
+    void failingTest() {
+         assertEquals(1, 2);
+    }
 }
